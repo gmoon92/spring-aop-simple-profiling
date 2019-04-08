@@ -1,5 +1,0 @@
-INDEX VERSION 1.129+C:\Users\moong\git\spring-aop-simple-profiling\.metadata\.plugins\org.eclipse.jdt.core
-4026589738.index
-2715903010.index
-4251247400.index
-3718008559.index
