@@ -9,13 +9,16 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learning</groupId>
-	<artifactId>aspect</artifactId>
+	<artifactId>aop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>aspect</name>
+	<name>aop</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		
+		<!-- aspectj -->
+		<org.aspectj.version>1.9.2</org.aspectj.version>
 	</properties>
 
 	<dependencies>
@@ -28,6 +31,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj.version}</version>
 		</dependency>
 	</dependencies>
 
