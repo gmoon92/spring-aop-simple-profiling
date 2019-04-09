@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BusinessTest {
-	
+
 	private ClassPathXmlApplicationContext ctx;
 	private Business business;
 

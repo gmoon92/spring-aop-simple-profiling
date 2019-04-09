@@ -29,11 +29,6 @@ public class BusinessTest {
 		//JDK Dynamic Proxy 생성 여부
 		System.out.println(business.getClass());
 		Assert.assertTrue(java.lang.reflect.Proxy.isProxyClass(business.getClass()));
-		
-		for(int i=0; i<3; i++){
-			business.doAction();
-		}
-		business.doRuntimeException();
 	}
 	
 	@Test
@@ -44,11 +39,6 @@ public class BusinessTest {
 		//JDK Dynamic Proxy 생성 여부
 		System.out.println(business.getClass());
 		Assert.assertTrue(java.lang.reflect.Proxy.isProxyClass(business.getClass()));
-		
-		for(int i=0; i<3; i++){
-			business.doAction();
-		}
-		business.doRuntimeException();
 	}
 	
 	@Test @Ignore
@@ -59,15 +49,15 @@ public class BusinessTest {
 		//CGLIB 생성 여부
 		System.out.println(business.getClass());
 		Assert.assertTrue(org.springframework.cglib.proxy.Enhancer.isEnhanced(business.getClass()));
-		
+	}
+	
+	@After
+	public void destory() throws Exception{
 		for(int i=0; i<3; i++){
 			business.doAction();
 		}
 		business.doRuntimeException();
-	}
-	
-	@After
-	public void destory(){
+		
 		ctx.close();
 	}
 }
