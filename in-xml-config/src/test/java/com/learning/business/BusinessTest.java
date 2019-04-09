@@ -15,13 +15,14 @@ public class BusinessTest {
 	public void init(){
 		ctx = new ClassPathXmlApplicationContext("classpath:/spring-aop-test.xml");
 		business = ctx.getBean(Business.class);
-		//JDK Dynamic Proxy 생성 여부
-		System.out.println(business.getClass());
-		Assert.assertTrue(java.lang.reflect.Proxy.isProxyClass(business.getClass()));
 	}
 	
 	@Test
-	public void javaDynamicProxyTest() throws Exception {
+	public void isJDKDynamicProxy() throws Exception {
+		//JDK Dynamic Proxy 생성 여부
+		System.out.println(business.getClass());
+		Assert.assertTrue(java.lang.reflect.Proxy.isProxyClass(business.getClass()));
+		
 		for(int i=0; i<3; i++){
 			business.doAction();
 		}
