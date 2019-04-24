@@ -1,4 +1,4 @@
-package com.learning.aop.business;
+package com.moong.aop.business;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -8,8 +8,8 @@ import org.junit.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.learning.aop.MyApplication;
-import com.learning.aop.aspect.AspectJAutoProxyConfig;
+import com.moong.aop.MyApplication;
+import com.moong.aop.aspect.AspectJAutoProxyConfig;
 
 public class BusinessTest {
 	private AnnotationConfigApplicationContext ctx;

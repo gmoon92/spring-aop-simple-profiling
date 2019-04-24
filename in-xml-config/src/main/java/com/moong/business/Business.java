@@ -1,4 +1,4 @@
-package com.learning.business;
+package com.moong.business;
 
 public interface Business {
 	public void doAction() throws Exception;

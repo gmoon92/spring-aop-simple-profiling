@@ -1,4 +1,4 @@
-package com.learning.aop;
+package com.moong.aop;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

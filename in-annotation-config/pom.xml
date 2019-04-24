@@ -8,8 +8,8 @@
 		<version>2.1.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.learning</groupId>
-	<artifactId>aop</artifactId>
+	<groupId>com.moong</groupId>
+	<artifactId>in-annotation-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>aop</name>
 	<description>Demo project for Spring Boot</description>

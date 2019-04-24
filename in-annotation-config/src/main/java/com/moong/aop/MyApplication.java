@@ -1,10 +1,10 @@
-package com.learning.aop;
+package com.moong.aop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.learning.aop.business.Business;
+import com.moong.aop.business.Business;
 
 @SpringBootApplication
 public class MyApplication {

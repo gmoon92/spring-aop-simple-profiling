@@ -1,10 +1,9 @@
-package com.learning.business;
+package com.moong.business;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class BusinessImple implements Business{
-
 	@Override
 	public void doAction() throws Exception {
 		Thread.sleep(500); // 실행 0.5초 지연
